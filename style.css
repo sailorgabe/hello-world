@@ -1,0 +1,12 @@
+body {
+    background-color: beige;
+}
+
+* {
+    border-radius: 5%;
+}
+
+p {
+    color: rgba(14, 13, 12, 0.486);
+}
+
