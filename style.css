@@ -14,9 +14,15 @@ main img {
     width: fit-content;
     height: fit-content;
 }
-.center {
-    margin: auto;
-    width: 50%;
-    border: 3px sold black;
-    padding: 10px;
+/* Style for the div containing the images */
+div {
+    display: flex;
+    justify-content: center; /* This centers the child elements (images) horizontally */
+    flex-wrap: wrap; /* This ensures wrapping if there's not enough space for all images on one line */
+    gap: 10px; /* This provides some spacing between images */
+}
+
+/* Style for the individual images inside the div */
+div img {
+    margin: 0 auto; /* This centers each image if they are on separate lines due to wrapping */
 }
