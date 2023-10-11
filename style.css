@@ -14,3 +14,9 @@ main img {
     width: fit-content;
     height: fit-content;
 }
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px sold black;
+    padding: 10px;
+}
