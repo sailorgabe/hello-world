@@ -1,31 +1,8 @@
-
-<!DOCTYPE html>
 <html>
 <head>
     <title>Puppy Power</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function displayPuppyName() {
-            const input = document.getElementById('puppyNameInput').value;
-            const output = document.getElementById('puppyNameOutput');
-            output.innerText = "Your puppy's name is: " + input;
-
-            const message = document.getElementById('nameLengthMessage');
-            if(input.length > 6) {
-                message.innerText = "BOOM!  That's a long name! Why did you name it that?";
-            } else {
-                message.innerText = "That's a short name!";
-            }
-        }
-
-        function displayDate() {
-            const date = new Date();
-            const formattedDate = date.toLocaleDateString();
-            document.getElementById('todaysDate').innerText = "Today's Date: " + formattedDate;
-        }
-
-        window.onload = displayDate; // Display date when the page loads
-    </script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,14 +10,15 @@
         <nav>
             <ul>
                 <li><a href="https://sailorgabe.github.io/hello-world/">Link to my page</a></li>
-                <li><a href="https://mikeascalon.github.io/hello-world/demo.html">Link to my partners page</a></li>
+                <li><a href="https://mikeascalon.github.io/hello-world/demo.html">Link to my partner's page</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <img src="https://images.unsplash.com/photo-1611764087418-76b6bbaddc76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Puppy Image"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper.</p>
+        
         <div>
             <!-- User input for puppy name -->
             <input type="text" id="puppyNameInput" placeholder="Enter your puppy's name" />
@@ -51,6 +29,7 @@
             <img src="https://media.istockphoto.com/id/523633973/photo/golden-retriever-puppy.jpg?s=612x612&w=is&k=20&c=buTVqvXlrNTEXa0ywk98FsL0azTa9-YcoeCRJb3pwws=" alt="Golden Retriever Puppy"/>
             <img src="https://images.unsplash.com/photo-1529117332242-b597eb0848db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Puppy Image 2"/>
         </div>
+        
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper.</p> 
 
         <!-- Display today's date -->
