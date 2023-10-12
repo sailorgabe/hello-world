@@ -24,7 +24,14 @@ function displayPuppyName() {
     }
 }
 
-function displayDate() {
+function howManyDogs() {
+    let numOfDogs = prompt ('How many dogs would you like to see?');
+
+    for(let i = 0; i < numbOfDogs; i++){
+        document.write("img src='onmessage.jpeg') alt='This dog is over it' >")
+    }
+}
+function displayDate(){
     const date = new Date();
     const formattedDate = date.toLocaleDateString();
     document.getElementById('todaysDate').innerText = "Today's Date: " + formattedDate;
