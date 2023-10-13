@@ -1,49 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-<head>
     <title>Puppy Power</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script language="javascript">
-
-        alert("Hey!  You like dogs?");
+    <script src="script.js"></script>
+    <script>
+        alert("Hey! You like dogs?");
         alert("What about cats?");
         alert("We love puppies here!");
-        alert("Do you want to see some?");
-    </script>
-    <script>
- 
-        var name = prompt("What is your name:", "");
-        document.write("Hello ", name);
-         
-    </script>
-    <script>
- 
-        if (confirm("Would you like to join our email distro?")) {
-            document.write("Great!);
-        } else {
-            document.write("OK, no problem!");
+        howManyDogs();
+
+        function clicked() {
+            document.getElementById('display').innerHTML = 'Puppy Power!';
         }
-         
-        </script>
-      
-    <script>
- 
-    var name = prompt("Please enter your e-mail address to receive latest info:", "PuppyPower.com");
-    document.write("Thanks for subscribiing!", name);
-     
+
+        window.onload = function() {
+            document.getElementById('btn').addEventListener('click', clicked);
+        };
     </script>
 </head>
+
 <body>
     <header>
         <h1>Puppy Power</h1>
@@ -56,28 +34,34 @@
     </header>
 
     <main>
-        <img src="https://images.unsplash.com/photo-1611764087418-76b6bbaddc76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Puppy Image"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui ut ornare lectus sit. Amet purus gravida quis blandit turpis cursus in hac habitasse. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Amet facilisis magna etiam tempor orci. Consectetur adipiscing elit duis tristique sollicitudin. In fermentum et sollicitudin ac. Diam in arcu cursus euismod quis viverra. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Risus nec feugiat in fermentum posuere.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper.</p>
-        
+        <img id="bannerimg" src="https://images.unsplash.com/photo-1611764087418-76b6bbaddc76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Puppy Image"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada fames ac turpis egestas maecenas pharetra convallis. Arcu non odio euismod lacinia at quis. Ipsum dolor sit amet consectetur adipiscing elit duis tristique. Nunc sed augue lacus viverra. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque. Bibendum at varius vel pharetra vel turpis. Id aliquet lectus proin nibh nisl condimentum id. Tincidunt eget nullam non nisi. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Sed nisi lacus sed viverra. Id eu nisl nunc mi ipsum faucibus. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Risus nec feugiat in fermentum posuere urna nec. Egestas erat imperdiet sed euismod nisi. Tempus imperdiet nulla malesuada pellentesque elit eget gravida.</p>
         <div>
+            
             <!-- User input for puppy name -->
             <input type="text" id="puppyNameInput" placeholder="Enter your puppy's name"/>
             <button onclick="displayPuppyName()">Display Name</button>
             <p id="puppyNameOutput"></p>
             <p id="nameLengthMessage"></p>
 
-            <img src="https://raw.githubusercontent.com/sailorgabe/hello-world/main/GoldenRetrievers.jpg" alt="GoldenRetrievers"/>
-            <img src="https://raw.githubusercontent.com/sailorgabe/hello-world/main/Pugs.jpg" alt="Pugs"/>
         </div>
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper.</p> 
-
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/sailorgabe/hello-world/main/GoldenRetrievers.jpg" alt="GoldenRetreiver">
+            <img src="https://raw.githubusercontent.com/sailorgabe/hello-world/main/Pugs.jpg" alt="Pugs">
+            <img src="https://raw.githubusercontent.com/sailorgabe/hello-world/main/GoldenSmile.jpg" alt="GoldenSmile">
+        </div
         <!-- Display today's date -->
         <p id="todaysDate"></p>
     </main>
+
+    <button id="btn">Click me</button>
+    <div id="display"></div>
 
     <footer>
         <p>By Gabriel Urquidez</p>
     </footer>
 </body>
 </html>
+
+

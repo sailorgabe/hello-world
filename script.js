@@ -1,3 +1,12 @@
+function howManyDogs() {
+    let numOfDogs = prompt('How many dogs would you like to see?');
+    if(parseInt(numOfDogs)<0) {
+        numOfDogs = prompt('ha ha you must see ONE PUPPY!')
+    }
+    for(let i = 0; i < numOfDogs; i++){
+        document.write("<img src='https://raw.githubusercontent.com/sailorgabe/hello-world/main/Pugs.jpg') alt='This dog is over it' />")
+    }
+}
 document.addEventListener('DOMContentLoaded', function() {
     displayDate(); // Display date when the page loads
 
@@ -24,13 +33,7 @@ function displayPuppyName() {
     }
 }
 
-function howManyDogs() {
-    let numOfDogs = prompt ('How many dogs would you like to see?');
 
-    for(let i = 0; i < numbOfDogs; i++){
-        document.write("img src='onmessage.jpeg') alt='This dog is over it' >")
-    }
-}
 function displayDate(){
     const date = new Date();
     const formattedDate = date.toLocaleDateString();
